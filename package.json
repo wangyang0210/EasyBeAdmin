@@ -1,6 +1,6 @@
 {
-  "name": "vue-pure-admin",
-  "version": "3.9.7",
+  "name": "easybe-admin",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "NODE_OPTIONS=--max-old-space-size=4096 vite",
@@ -147,7 +147,7 @@
       ]
     }
   },
-  "repository": "git@github.com:pure-admin/vue-pure-admin.git",
-  "author": "xiaoxian521",
+  "repository": "git@github.com:wangyang0210/EasyBeAdmin.git",
+  "author": "wangyang0210",
   "license": "MIT"
 }

@@ -5,12 +5,10 @@ import Motion from "../utils/motion";
 import { message } from "@/utils/message";
 import { updateRules } from "../utils/rule";
 import type { FormInstance } from "element-plus";
-import { useVerifyCode } from "../utils/verifyCode";
 import { $t, transformI18n } from "@/plugins/i18n";
 import { useUserStoreHook } from "@/store/modules/user";
 import { useRenderIcon } from "@/components/ReIcon/src/hooks";
 import Lock from "@iconify-icons/ri/lock-fill";
-import Iphone from "@iconify-icons/ep/iphone";
 import User from "@iconify-icons/ri/user-3-fill";
 
 const { t } = useI18n();
@@ -18,13 +16,10 @@ const checked = ref(false);
 const loading = ref(false);
 const ruleForm = reactive({
   username: "",
-  phone: "",
-  verifyCode: "",
   password: "",
   repeatPassword: ""
 });
 const ruleFormRef = ref<FormInstance>();
-const { isDisabled, text } = useVerifyCode();
 const repeatPasswordRule = [
   {
     validator: (rule, value, callback) => {
@@ -46,7 +41,7 @@ const onUpdate = async (formEl: FormInstance | undefined) => {
   await formEl.validate((valid, fields) => {
     if (valid) {
       if (checked.value) {
-        // 模拟请求，需根据实际开发进行修改
+        // TODO 模拟请求，需根据实际开发进行修改
         setTimeout(() => {
           message(transformI18n($t("login.registerSuccess")), {
             type: "success"
@@ -65,7 +60,6 @@ const onUpdate = async (formEl: FormInstance | undefined) => {
 };
 
 function onBack() {
-  useVerifyCode().end();
   useUserStoreHook().SET_CURRENTPAGE(0);
 }
 </script>
@@ -94,41 +88,6 @@ function onBack() {
           :placeholder="t('login.username')"
           :prefix-icon="useRenderIcon(User)"
         />
-      </el-form-item>
-    </Motion>
-
-    <Motion :delay="100">
-      <el-form-item prop="phone">
-        <el-input
-          clearable
-          v-model="ruleForm.phone"
-          :placeholder="t('login.phone')"
-          :prefix-icon="useRenderIcon(Iphone)"
-        />
-      </el-form-item>
-    </Motion>
-
-    <Motion :delay="150">
-      <el-form-item prop="verifyCode">
-        <div class="w-full flex justify-between">
-          <el-input
-            clearable
-            v-model="ruleForm.verifyCode"
-            :placeholder="t('login.smsVerifyCode')"
-            :prefix-icon="useRenderIcon('ri:shield-keyhole-line')"
-          />
-          <el-button
-            :disabled="isDisabled"
-            class="ml-2"
-            @click="useVerifyCode().start(ruleFormRef, 'phone')"
-          >
-            {{
-              text.length > 0
-                ? text + t("login.info")
-                : t("login.getVerifyCode")
-            }}
-          </el-button>
-        </div>
       </el-form-item>
     </Motion>
 
