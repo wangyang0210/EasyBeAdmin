@@ -26,18 +26,21 @@ menus:
   hshome: Home
   hslogin: Login
   hsempty: Empty Page
+  hshelpCenter: Help Center
+  hscreativeCenter: Creative Center
+  hscontentManagement: Content Manage
   hssysManagement: System Manage
-  hpersonalSettings: Personal Settings
-  hpluginManagement: Plugin Manage
-  happearanceManagement: appearance Manage
-  hbackupManagement: Backup Manage
-  hbaseSettings: Base Settings
-  hcommentSettings: Comment Settings
-  hreadSettings: Reading Settings
-  hpermanentLinkSettings: Permanent Link Settings
-  hdataCenter: Data Center
-  hdataOverview: Data Overview
-  harticleData: Article Data
+  hspersonalSettings: Personal Settings
+  hspluginManagement: Plugin Manage
+  hsappearanceManagement: appearance Manage
+  hsbackupManagement: Backup Manage
+  hsbaseSettings: Base Settings
+  hscommentSettings: Comment Settings
+  hsreadSettings: Reading Settings
+  hspermanentLinkSettings: Permanent Link Settings
+  hsdataCenter: Data Center
+  hsdataOverview: Data Overview
+  hsarticleData: Article Data
   hsUserCenter: User Center
   hsUser: User Manage
   hsRole: Role Manage

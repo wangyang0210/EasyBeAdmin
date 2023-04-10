@@ -14,7 +14,7 @@ export default {
       name: "Base",
       meta: {
         icon: "role",
-        title: $t("menus.hbaseSettings"),
+        title: $t("menus.hsbaseSettings"),
         roles: ["admin"]
       }
     },
@@ -23,7 +23,7 @@ export default {
       name: "Comments",
       meta: {
         icon: "role",
-        title: $t("menus.hcommentSettings"),
+        title: $t("menus.hscommentSettings"),
         roles: ["admin"]
       }
     },
@@ -32,7 +32,7 @@ export default {
       name: "Read",
       meta: {
         icon: "role",
-        title: $t("menus.hreadSettings"),
+        title: $t("menus.hsreadSettings"),
         roles: ["admin"]
       }
     },
@@ -41,7 +41,7 @@ export default {
       name: "Read",
       meta: {
         icon: "role",
-        title: $t("menus.hpermanentLinkSettings"),
+        title: $t("menus.hspermanentLinkSettings"),
         roles: ["admin"]
       }
     },
@@ -59,7 +59,7 @@ export default {
       name: "Plugin",
       meta: {
         icon: "role",
-        title: $t("menus.hpluginManagement"),
+        title: $t("menus.hspluginManagement"),
         roles: ["admin"]
       }
     },
@@ -68,7 +68,7 @@ export default {
       name: "Appearance",
       meta: {
         icon: "role",
-        title: $t("menus.happearanceManagement"),
+        title: $t("menus.hsappearanceManagement"),
         roles: ["admin"]
       }
     },
@@ -77,7 +77,7 @@ export default {
       name: "Backup",
       meta: {
         icon: "role",
-        title: $t("menus.hbackupManagement"),
+        title: $t("menus.hsbackupManagement"),
         roles: ["admin"]
       }
     }

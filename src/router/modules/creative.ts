@@ -1,19 +1,19 @@
 import { $t } from "@/plugins/i18n";
-import { data } from "@/router/enums";
+import { creative } from "@/router/enums";
 
 export default {
-  path: "/data",
+  path: "/creative",
   redirect: "/nested/menu1/menu1-1",
   meta: {
-    title: $t("menus.hsdataCenter"),
-    icon: "histogram",
-    rank: data
+    title: $t("menus.hscreativeCenter"),
+    icon: "edit",
+    rank: creative
   },
   children: [
     {
       path: "/nested/menu1",
       meta: {
-        title: $t("menus.hsdataOverview"),
+        title: $t("menus.hsUser"),
         keepAlive: true
       },
       redirect: "/nested/menu1/menu1-1"
@@ -23,7 +23,7 @@ export default {
       name: "Menu2",
       component: () => import("@/views/nested/menu2/index.vue"),
       meta: {
-        title: $t("menus.hsarticleData"),
+        title: $t("menus.hsRole"),
         keepAlive: true
       }
     }
