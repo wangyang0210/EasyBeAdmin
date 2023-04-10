@@ -10,6 +10,42 @@ export default {
   },
   children: [
     {
+      path: "/system/role/index",
+      name: "Base",
+      meta: {
+        icon: "role",
+        title: $t("menus.hbaseSettings"),
+        roles: ["admin"]
+      }
+    },
+    {
+      path: "/system/role/index",
+      name: "Comments",
+      meta: {
+        icon: "role",
+        title: $t("menus.hcommentSettings"),
+        roles: ["admin"]
+      }
+    },
+    {
+      path: "/system/role/index",
+      name: "Read",
+      meta: {
+        icon: "role",
+        title: $t("menus.hreadSettings"),
+        roles: ["admin"]
+      }
+    },
+    {
+      path: "/system/role/index",
+      name: "Read",
+      meta: {
+        icon: "role",
+        title: $t("menus.hpermanentLinkSettings"),
+        roles: ["admin"]
+      }
+    },
+    {
       path: "/system/user/index",
       name: "User",
       meta: {
