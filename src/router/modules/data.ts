@@ -1,19 +1,19 @@
 import { $t } from "@/plugins/i18n";
-import { nested } from "@/router/enums";
+import { data } from "@/router/enums";
 
 export default {
   path: "/nested",
   redirect: "/nested/menu1/menu1-1",
   meta: {
-    title: $t("menus.hsmenus"),
+    title: $t("menus.hdataCenter"),
     icon: "histogram",
-    rank: nested
+    rank: data
   },
   children: [
     {
       path: "/nested/menu1",
       meta: {
-        title: $t("menus.hsmenu1"),
+        title: $t("menus.hdataOverview"),
         keepAlive: true
       },
       redirect: "/nested/menu1/menu1-1"
@@ -23,7 +23,7 @@ export default {
       name: "Menu2",
       component: () => import("@/views/nested/menu2/index.vue"),
       meta: {
-        title: $t("menus.hsmenu2"),
+        title: $t("menus.harticleData"),
         keepAlive: true
       }
     }

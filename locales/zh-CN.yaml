@@ -35,6 +35,9 @@ menus:
   hcommentSettings: 评论设置
   hreadSettings: 阅读设置
   hpermanentLinkSettings: 永久链接设置
+  hdataCenter: 数据中心
+  hdataOverview: 数据总览
+  harticleData: 文章数据
   hsUser: 用户管理
   hsRole: 角色管理
   hsDept: 部门管理
@@ -58,14 +61,6 @@ menus:
   hscontextmenu: 右键菜单
   hstypeit: 打字机组件
   hsjsoneditor: JSON编辑器
-  hsmenus: 多级菜单
-  hsmenu1: 菜单1
-  hsmenu1-1: 菜单1-1
-  hsmenu1-2: 菜单1-2
-  hsmenu1-2-1: 菜单1-2-1
-  hsmenu1-2-2: 菜单1-2-2
-  hsmenu1-3: 菜单1-3
-  hsmenu2: 菜单2
   permission: 权限管理
   permissionPage: 页面权限
   permissionButton: 按钮权限

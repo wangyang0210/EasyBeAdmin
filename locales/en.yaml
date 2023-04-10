@@ -35,6 +35,9 @@ menus:
   hcommentSettings: Comment Settings
   hreadSettings: Reading Settings
   hpermanentLinkSettings: Permanent Link Settings
+  hdataCenter: Data Center
+  hdataOverview: Data Overview
+  harticleData: Article Data
   hsUser: User Manage
   hsRole: Role Manage
   hsDept: Dept Manage
@@ -59,13 +62,6 @@ menus:
   hstypeit: Typeit Components
   hsjsoneditor: JSON Editor
   hsmenus: MultiLevel Menu
-  hsmenu1: Menu1
-  hsmenu1-1: Menu1-1
-  hsmenu1-2: Menu1-2
-  hsmenu1-2-1: Menu1-2-1
-  hsmenu1-2-2: Menu1-2-2
-  hsmenu1-3: Menu1-3
-  hsmenu2: Menu2
   permission: Permission Manage
   permissionPage: Page Permission
   permissionButton: Button Permission
