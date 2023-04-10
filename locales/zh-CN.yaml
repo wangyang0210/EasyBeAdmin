@@ -38,6 +38,7 @@ menus:
   hdataCenter: 数据中心
   hdataOverview: 数据总览
   harticleData: 文章数据
+  hsUserCenter: 用户中心
   hsUser: 用户管理
   hsRole: 角色管理
   hsDept: 部门管理

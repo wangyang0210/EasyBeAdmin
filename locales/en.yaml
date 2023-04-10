@@ -38,6 +38,7 @@ menus:
   hdataCenter: Data Center
   hdataOverview: Data Overview
   harticleData: Article Data
+  hsUserCenter: User Center
   hsUser: User Manage
   hsRole: Role Manage
   hsDept: Dept Manage
