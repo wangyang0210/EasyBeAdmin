@@ -14,25 +14,34 @@ export default {
       name: "User",
       meta: {
         icon: "flUser",
-        title: $t("menus.hsUser"),
+        title: $t("menus.hpersonalSettings"),
         roles: ["admin"]
       }
     },
     {
       path: "/system/role/index",
-      name: "Role",
+      name: "Plugin",
       meta: {
         icon: "role",
-        title: $t("menus.hsRole"),
+        title: $t("menus.hpluginManagement"),
         roles: ["admin"]
       }
     },
     {
-      path: "/system/dept/index",
-      name: "Dept",
+      path: "/system/role/index",
+      name: "Appearance",
       meta: {
-        icon: "dept",
-        title: $t("menus.hsDept"),
+        icon: "role",
+        title: $t("menus.happearanceManagement"),
+        roles: ["admin"]
+      }
+    },
+    {
+      path: "/system/role/index",
+      name: "Backup",
+      meta: {
+        icon: "role",
+        title: $t("menus.hbackupManagement"),
         roles: ["admin"]
       }
     }

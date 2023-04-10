@@ -27,6 +27,14 @@ menus:
   hslogin: Login
   hsempty: Empty Page
   hssysManagement: System Manage
+  hpersonalSettings: Personal Settings
+  hpluginManagement: Plugin Manage
+  happearanceManagement: appearance Manage
+  hbackupManagement: Backup Manage
+  hbaseSettings: Base Settings
+  hcommentSettings: Comment Settings
+  hreadSettings: Reading Settings
+  hpermanentLinkSettings: Permanent Link Settings
   hsUser: User Manage
   hsRole: Role Manage
   hsDept: Dept Manage
