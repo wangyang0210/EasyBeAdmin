@@ -3,7 +3,7 @@ import { creative } from "@/router/enums";
 
 export default {
   path: "/creative",
-  redirect: "/nested/menu1/menu1-1",
+  redirect: "/creative/menu1/menu1-1",
   meta: {
     title: $t("menus.hscreativeCenter"),
     icon: "edit",
@@ -11,19 +11,19 @@ export default {
   },
   children: [
     {
-      path: "/nested/menu1",
+      path: "/creative/menu1",
       meta: {
-        title: $t("menus.hsUser"),
+        title: $t("menus.hswriteArticles"),
         keepAlive: true
       },
-      redirect: "/nested/menu1/menu1-1"
+      redirect: "/creative/menu1/menu1-1"
     },
     {
-      path: "/nested/menu2",
+      path: "/creative/menu2",
       name: "Menu2",
       component: () => import("@/views/nested/menu2/index.vue"),
       meta: {
-        title: $t("menus.hsRole"),
+        title: $t("menus.hscreatePage"),
         keepAlive: true
       }
     }

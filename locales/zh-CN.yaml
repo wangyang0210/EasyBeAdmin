@@ -28,7 +28,15 @@ menus:
   hsempty: 无Layout页
   hshelpCenter: 帮助中心
   hscreativeCenter: 创作中心
+  hscreatePage: 创建页面
+  hswriteArticles: 撰写文章
   hscontentManagement: 内容管理
+  hsarticlesManagement: 文章管理
+  hspageManagement: 独立页面管理
+  hscommentsManagement: 评论管理
+  hscategoryManagement: 分类管理
+  hstagsManagement: 标签管理
+  hsfileManagement: 文件管理
   hssysManagement: 系统管理
   hpersonalSettings: 个人设置
   hspluginManagement: 插件管理
@@ -44,71 +52,8 @@ menus:
   hsUserCenter: 用户中心
   hsUser: 用户管理
   hsRole: 角色管理
-  hsDept: 部门管理
+  hsAbout: 关于我们
   hseditor: 编辑器
-  hsabnormal: 异常页面
-  hsfourZeroFour: "404"
-  hsfourZeroOne: "403"
-  hsFive: "500"
-  hscomponents: 组件
-  hsmessage: 消息提示组件
-  hsvideo: 视频组件
-  hsmap: 地图组件
-  hsdraggable: 拖拽组件
-  hssplitPane: 切割面板
-  hsbutton: 按钮组件
-  hscropping: 图片裁剪
-  hscountTo: 数字动画
-  hsselector: 选择器组件
-  hsflowChart: 流程图
-  hsseamless: 无缝滚动
-  hscontextmenu: 右键菜单
-  hstypeit: 打字机组件
-  hsjsoneditor: JSON编辑器
-  permission: 权限管理
-  permissionPage: 页面权限
-  permissionButton: 按钮权限
-  hstabs: 标签页操作
-  hsguide: 引导页
-  hsAble: 功能
-  hsMenuTree: 菜单树结构
-  hsWatermark: 水印
-  hsPrint: 打印
-  hsDownload: 下载
-  hsExternalPage: 外部页面
-  hsPureDocument: 平台文档（内嵌）
-  externalLink: 平台文档（外链）
-  hsEpDocument: Element Plus 文档（内嵌）
-  hsVueDocument: Vue3 文档（内嵌）
-  hsViteDocument: Vite 文档（内嵌）
-  hsPiniaDocument: Pinia 文档（内嵌）
-  hsRouterDocument: Vue Router 文档（内嵌）
-  hsTailwindcssDocument: Tailwindcss 文档（内嵌）
-  hsAbout: 关于
-  hsResult: 结果页面
-  hsSuccess: 成功页面
-  hsFail: 失败页面
-  hsIconSelect: 图标选择器
-  hsTimeline: 时间线
-  hsLineTree: 树形连接线
-  hsList: 列表页
-  hsListCard: 卡片列表页
-  hsDebounce: 防抖节流
-  hsFormDesign: 表单设计器
-  hsBarcode: 条形码
-  hsQrcode: 二维码
-  hsCascader: 区域级联选择器
-  hsSwiper: Swiper插件
-  hsVirtualList: 虚拟列表
-  hsPdf: PDF预览
-  hsExecl: 导出Excel
-  hsInfiniteScroll: 表格无限滚动
-  hsdanmaku: 弹幕组件
-  hsPureTableBase: 基础用法（23个示例）
-  hsPureTableHigh: 高级用法（10个示例）
-  hsTree: 大数据树业务组件
-  hsMenuoverflow: 目录超出显示 Tooltip 文字提示
-  hsChildMenuoverflow: 菜单超出显示 Tooltip 文字提示
 status:
   hsLoad: 加载中...
 login:
@@ -120,14 +65,9 @@ login:
   login: 登录
   register: 注册
   back: 返回
-  test: 模拟测试
-  tip: 扫码后点击"确认"，即可完成登录
   definite: 确定
   loginSuccess: 登录成功
   registerSuccess: 注册成功
-  tickPrivacy: 请勾选隐私政策
-  readAccept: 我已仔细阅读并接受
-  privacyPolicy: 《隐私政策》
   info: 秒后重新获取
   usernameReg: 请输入账号
   passwordReg: 请输入密码

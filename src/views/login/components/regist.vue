@@ -12,7 +12,6 @@ import Lock from "@iconify-icons/ri/lock-fill";
 import User from "@iconify-icons/ri/user-3-fill";
 
 const { t } = useI18n();
-const checked = ref(false);
 const loading = ref(false);
 const ruleForm = reactive({
   username: "",
@@ -40,18 +39,13 @@ const onUpdate = async (formEl: FormInstance | undefined) => {
   if (!formEl) return;
   await formEl.validate((valid, fields) => {
     if (valid) {
-      if (checked.value) {
-        // TODO 模拟请求，需根据实际开发进行修改
-        setTimeout(() => {
-          message(transformI18n($t("login.registerSuccess")), {
-            type: "success"
-          });
-          loading.value = false;
-        }, 2000);
-      } else {
+      // TODO 模拟请求，需根据实际开发进行修改
+      setTimeout(() => {
+        message(transformI18n($t("login.registerSuccess")), {
+          type: "success"
+        });
         loading.value = false;
-        message(transformI18n($t("login.tickPrivacy")), { type: "warning" });
-      }
+      }, 2000);
     } else {
       loading.value = false;
       return fields;
@@ -112,17 +106,6 @@ function onBack() {
           :placeholder="t('login.sure')"
           :prefix-icon="useRenderIcon(Lock)"
         />
-      </el-form-item>
-    </Motion>
-
-    <Motion :delay="300">
-      <el-form-item>
-        <el-checkbox v-model="checked">
-          {{ t("login.readAccept") }}
-        </el-checkbox>
-        <el-button link type="primary">
-          {{ t("login.privacyPolicy") }}
-        </el-button>
       </el-form-item>
     </Motion>
 

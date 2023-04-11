@@ -13,17 +13,48 @@ export default {
     {
       path: "/nested/menu1",
       meta: {
-        title: $t("menus.hsUser"),
+        title: $t("menus.hsarticlesManagement"),
+        keepAlive: true
+      },
+      redirect: "/nested/menu1/menu1-1"
+    },
+    {
+      path: "/nested/menu1",
+      meta: {
+        title: $t("menus.hspageManagement"),
+        keepAlive: true
+      },
+      redirect: "/nested/menu1/menu1-1"
+    },
+    {
+      path: "/nested/menu1",
+      meta: {
+        title: $t("menus.hscommentsManagement"),
+        keepAlive: true
+      },
+      redirect: "/nested/menu1/menu1-1"
+    },
+    {
+      path: "/nested/menu1",
+      meta: {
+        title: $t("menus.hscategoryManagement"),
+        keepAlive: true
+      },
+      redirect: "/nested/menu1/menu1-1"
+    },
+    {
+      path: "/nested/menu1",
+      meta: {
+        title: $t("menus.hstagsManagement"),
         keepAlive: true
       },
       redirect: "/nested/menu1/menu1-1"
     },
     {
       path: "/nested/menu2",
-      name: "Menu2",
       component: () => import("@/views/nested/menu2/index.vue"),
       meta: {
-        title: $t("menus.hsRole"),
+        title: $t("menus.hsfileManagement"),
         keepAlive: true
       }
     }
