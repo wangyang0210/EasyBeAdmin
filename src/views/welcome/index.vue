@@ -1,13 +1,7 @@
 <script setup lang="ts">
 import dayjs from "dayjs";
 import axios from "axios";
-// import MdEditor from "md-editor-v3";
-// import Bar from "./components/Bar.vue";
-// import Pie from "./components/Pie.vue";
-// import Line from "./components/Line.vue";
-// import TypeIt from "@/components/ReTypeit";
 import { ref, markRaw } from "vue";
-// import Github from "./components/Github.vue";
 import { randomColor } from "@pureadmin/utils";
 import { useRenderFlicker } from "@/components/ReFlicker";
 
