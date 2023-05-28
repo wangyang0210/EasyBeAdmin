@@ -11,9 +11,6 @@ defineOptions({
 
 const list = ref();
 const loading = ref<boolean>(true);
-// const titleClass = computed(() => {
-//   return ["text-base", "font-medium"];
-// });
 
 setTimeout(() => {
   loading.value = !loading.value;
